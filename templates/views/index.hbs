@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    {{>header}}
+       <main>
+        <div class="main-container1">
+            <img src="/images/img/nails-home.jpg" alt="" class="main-image">
+            <img src="/images/img/small-img.jpg" alt="" class="small-image">
+        </div>
+
+        <div class="main-conatiner2">
+            <div id="gallary" class="gallary">
+                <h2 class="name">My Gallary</h2>
+                <hr class="hrs">
+            </div>
+            <div class="image-gallary">
+                <button id="scrolRight" class="icon"><i class="fa fa-angle-double-left"></i></button>
+                <img src="/images/img/p1.jpeg" alt="" class="image">
+                <img src="/images/img/p2.jpeg" alt="" class="image">
+                <img src="/images/img/p3.jpeg" alt="" class="image">
+                <button id="scrolLeft"  class="icon"><i class="fa fa-angle-double-right"></i></button>
+            </div>
+            
+            <div class="image-gallary-mobile">
+                <div class="image-gallary-m">
+                <button id="scrolRightM" class="icon"><i class="fa fa-angle-double-left"></i></button>
+                <img src="/images/img/p1.jpeg" alt="" class="imageM">
+                <button id="scrolLeftM"  class="icon"><i class="fa fa-angle-double-right"></i></button>
+
+                </div>
+            </div>
+        </div>
+            <div class="main-container3">
+            <div id="services" class="services">
+                <h2 class="name">My Service</h2>
+                <hr class="hrs">
+            </div>
+
+            <div class="service-container">
+                <div class="service">
+                   <div class="title">Gel polish on a natural nail -</div>
+                   <div class="price">100  &#8362;</div>
+                    <button  class="appointment"><a href="/login">Appointment </a> <i class="fa  fa-calendar"></i></button>
+                </div>
+                <div class="service">
+                    <div class="title">Anatomic structure gel nail polish -</div>
+                    <div class="price">120  &#8362;</div>
+                    <button  class="appointment"><a href="/login">Appointment </a> <i class="fa  fa-calendar"></i></button>
+                </div>
+                <div class="service">
+                    <div class="title">Construction in gel -</div>
+                    <div class="price">250 &#8362;</div>
+                    <button  class="appointment"><a href="/login">Appointment </a> <i class="fa  fa-calendar"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-container4">
+            <div id="contacts" class="contacts">
+                <h2 class="name">Contact</h2>
+                <hr class="hrs">
+            </div>
+            <div class="contact-container">
+                <div class="conatct-way">
+                    <div class="whatSapp">
+                        <button class="btn"><a href="https://api.whatsapp.com/send?phone=972545704017">whatsapp </a><i class="fa fa-whatsapp"></i></button>
+                           
+                    </div>
+                    <div class="call">
+                        <button class="btn"> <a href="tel:+972 0585885484">Call Me</a><i class="fa fa-solid fa-phone"></i></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    {{>footer}}
+
+    <script src="js/source.js"></script>
+</body>
+</html>
