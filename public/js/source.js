@@ -1,8 +1,8 @@
 console.log('hello from source.js')
 let images = ['p1.jpeg','p2.jpeg','p3.jpeg','p4.jpeg','p5.jpeg','p6.jpeg','p7.jpeg','p8.jpeg',
-'p9.jpeg','p10.jpeg','p11.jpeg','p12.jpeg','p13.jpeg'
-]
-let j = 3
+'p9.jpeg','p10.jpeg','p11.jpeg','p12.jpeg','p13.jpeg','p14.jpeg','p15.jpeg']
+
+let j = 2
 let k =0
 let scroolRighr = document.querySelector('#scrolRight')
 let scroolLeft = document.querySelector('#scrolLeft')
@@ -18,7 +18,8 @@ rigthtM.addEventListener('click',scroolRight)
 ledtM.addEventListener('click', scroolLefft)
 
 function scroolRight(){
-  if(j>=0){
+ 
+
     let image = document.querySelectorAll('.image')
     if(this === rigthtM ){
       if(k < images.length ){
@@ -29,33 +30,28 @@ function scroolRight(){
     }
     
     else if(this == scroolRighr){
-        console.log(j)
-        for(let i=0; i<image.length; i++){
-          if(images.length > j ){
-            console.log(i)
+      console.log('scrolright', j)
+        if(j < 2){
+          j =2
+        }
+        for(let i= 0; i < image.length; i++){
+          if(images.length >j ){
+              console.log(images.length)
               document.querySelectorAll('.image')[i].src = "/images/img/"+images[j++]
+              console.log('scrolrighttt', j)
           }
         }
 
       
       }
-      else if(j<0){
-        j=3
-        let image = document.querySelectorAll('.image')
     
-        for(let i=0; i<image.length; i++){
-          console.log(image.length)
-          if(images.length > j ){
-              document.querySelectorAll('.image')[i].src = "/images/img/"+images[j++]
-          }
-      
-        }
-      }
+  
   }
-}
+
 
 
 function scroolLefft(){
+  console.log(j)
 
   let image = document.querySelectorAll('.image')
   if(this === ledtM ){
@@ -67,11 +63,20 @@ function scroolLefft(){
     }
   }
   else if(this === scroolLeft ){
-    j = j-6
-    if(j>=0){
+  
+    if(j>2){
+      console.log('scroolleft afffter i', j) 
+      if(j >=2){
+        j = j-2
+
+      }
         for(let i=0; i<image.length; i++){
-          console.log(i)
+  
           if(images.length > j ){
+              
+              
+       
+       
               document.querySelectorAll('.image')[i].src = "/images/img/"+images[j--]
           }
         }

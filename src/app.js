@@ -37,6 +37,17 @@ app.get('/sing-up',(req,res)=>{
         name: 'sing up'
     })
 })
+
+app.get('/privacy-policy',(req, res) =>{
+    res.render('privacy-policy',{
+        name:'Privacy-policy'
+    })
+})
+app.get('/terms',(req, res) =>{
+    res.render('terms',{
+        name:'Terms'
+    })
+})
 app.listen(3000, ()=>{
     console.log('Server listen to port 3000')
 })

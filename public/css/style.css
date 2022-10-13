@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     
+    
 }
 /* //////////////////////////////////////////////// header /////////////////////////////////// */
 header {
@@ -143,7 +144,9 @@ main .small-image{
 
 /* //////////////////////////////////////end  service///////////////////////////////////// */
 /* //////////////////////////////////////contact///////////////////////////////////// */
-
+.main-container4{
+    padding-bottom: 50px;
+}
 .contact-container{
     display: flex;
     justify-content: center;
@@ -190,14 +193,17 @@ main .small-image{
 /* ////////////////////////////////////// footer///////////////////////////////////// */
 footer {
     margin-top: 20px;
-    padding: 10px ;
-    background-color: #CCCCFF;
+    padding: 5px ;
+    background-color: black;
     display: inline-block;
     width: 100%;
+    color: white;
+    position: fixed;
+    bottom: 0;
 }
 footer .nameCopy{
     display: inline-block;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
 
@@ -211,14 +217,16 @@ footer a {
     text-decoration: none;
     display: inline-block;
     padding-right: 10px;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
-    color: black;
-}
-footer a:hover{
     color: white;
 }
+footer a:hover{
+    color: #CCCCFF;
+
+}
+
 
 /* //////////////////////////////////////end  footer///////////////////////////////////// */
 
@@ -363,6 +371,34 @@ header #clos1:hover{
     margin: 5px;
 
 }
+/* ////////////////////////////////////////////  end mobile css/////////////////////////////// */
+
+
+/* //////////////////////////////////////////// terms and privacy-police css/////////////////////////////// */
+.terms , .privacy{
+    text-align: center;
+    padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.headline{
+    font-size: 28px;
+    font-weight: bold;
+    padding: 10px;
+    
+}
+.terms , .privacy p{
+    font-size: 21px;
+    line-height: 1.381;
+    font-weight: 400;
+    letter-spacing: .011em;
+    width: 50%;
+    margin: auto;
+}
+
+
+/* //////////////////////////////////////////// end terms and privacy-police css/////////////////////////////// */
+
+
 
 
 
