@@ -22,10 +22,12 @@ function scroolRight(){
 
     let image = document.querySelectorAll('.image')
     if(this === rigthtM ){
-      if(k < images.length ){
+      if(k < (images.length -1) && k >=0 ){
         image = document.querySelectorAll('.imageM')
-        console.log(k)
-        document.querySelector('.imageM').src =  "/images/img/"+images[k++]
+        k = k+1 
+        document.querySelector('.imageM').src =  "/images/img/"+images[k]
+        console.log(images[k])
+        console.log('rifhhht',k)
       }
     }
     
@@ -51,14 +53,15 @@ function scroolRight(){
 
 
 function scroolLefft(){
-  console.log(j)
+
 
   let image = document.querySelectorAll('.image')
   if(this === ledtM ){
-    if(k >0 ){
+    if(k >0 && k< images.length){
       image = document.querySelectorAll('.imageM')
-  
-      document.querySelector('.imageM').src =  "/images/img/"+images[k--]
+      k = k-1
+      document.querySelector('.imageM').src =  "/images/img/"+images[k]
+      console.log(images[k])
       console.log('leftt',k)
     }
   }

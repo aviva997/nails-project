@@ -26,7 +26,7 @@ app.get('',(req,res)=>{
 })
 
 app.get('/gallary',(req,res) =>{
-    res.render('index#gallary')
+    res.render('')
 })
 
 app.get('/login',(req,res)=>{

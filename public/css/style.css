@@ -385,7 +385,6 @@ header #clos1:hover{
     font-size: 28px;
     font-weight: bold;
     padding: 10px;
-    
 }
 .terms , .privacy p{
     font-size: 21px;
@@ -407,6 +406,9 @@ header #clos1:hover{
 @media only screen and (max-width: 768px){
     header {
         padding: 10px 8px;
+    }
+    #hamburguer{
+        display: block;
     }
     header .hamburguer-icon{
         display: block;
@@ -467,6 +469,18 @@ header #clos1:hover{
         font-size: 12px;
    
     }
+    .terms , .privacy{
+        padding: 40px;
+        text-align:left
+    }
+    .terms , .privacy p{
+        width: 100%;
+    }
+    .headline{
+        font-size: 22px;
+        font-weight: bold;
+        padding: 10px;
+    }
     footer{
         position: fixed;
         bottom: 0
@@ -480,6 +494,7 @@ header #clos1:hover{
     .loginFrom{
         width: auto;
     }
+
 
 
 }
