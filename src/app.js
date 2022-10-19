@@ -8,6 +8,7 @@ const port = process.env.PORT || 3000
 
 const publicDirectoryPath = path.join(__dirname,'../public')
 const viewPath = path.join(__dirname,'../templates/views')
+// const viewFooter = path.join(__dirname, '../templates/views/footer-view')
 const partialsPath = path.join(__dirname,'../templates/partials')
 
 
@@ -25,9 +26,9 @@ app.get('',(req,res)=>{
     })
 })
 
-app.get('/gallary',(req,res) =>{
-    res.render('')
-})
+// app.get('/gallary',(req,res) =>{
+//     res.render('index#gallary')
+// })
 
 app.get('/login',(req,res)=>{
     res.render('loginPage',{
@@ -41,12 +42,12 @@ app.get('/sing-up',(req,res)=>{
 })
 
 app.get('/privacy-policy',(req, res) =>{
-    res.render('privacy-policy',{
+    res.render('footer-view/privacy-policy',{
         name:'Privacy-policy'
     })
 })
 app.get('/terms',(req, res) =>{
-    res.render('terms',{
+    res.render('footer-view/terms',{
         name:'Terms'
     })
 })

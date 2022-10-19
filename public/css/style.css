@@ -13,6 +13,15 @@ header {
     display: inline-block;
     width: 100%;
 }
+header .hamburger-image{
+    display: none;
+    width: 24px;
+    float: right;
+
+    
+
+}
+
 header h2{
    
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -69,6 +78,7 @@ main .small-image{
 .hrs{
     width: 50px;
     border: 2px solid #3d3d55;
+    background-color: #3d3d55;
     text-align: center;
     margin: auto;
 }
@@ -308,38 +318,38 @@ footer a:hover{
 
 
 /* //////////////////////////////////////////// mobile css/////////////////////////////// */
-header .hamburguer-icon{
-    display: none;
-    float:right ;
-    padding: 5px;
-    cursor: pointer;
-  
-}
-header .hamburguer-icon .fa-bars:hover{
-  color: white;
-}
+
 header .slaider{
     position: fixed;
     background-color: white;
     z-index: 99;
     width: 150px;
- 
     margin-top: 40px;
     right: -320px;
    
 }
-header .items u{
+header .cancel-img{
+    padding-top: 5px;
+    padding-right: 5px;
+    width: 15px;
+    margin: 10px;
+    float: right;
+}
+header .cancel-img:hover{
+    color: #484879;
+}
+header .nav-items u{
     float: none;
     text-align: center;
 }
-header .items a{
+header .nav-items a{
     display: block;
     margin: 10px;
-} header .items a:hover{
+} header .nav-items a:hover{
     color: #484879;
 
 }
-header .items{
+header .itnav-items{
     display: block
 }
 header #clos1{
@@ -404,17 +414,13 @@ header #clos1:hover{
 
 /* ///////////////////////////////////// media-query//////////////////////////////////// */
 @media only screen and (max-width: 768px){
-    header {
-        padding: 10px 8px;
-    }
-    #hamburguer{
+   
+    header .hamburger-image{
         display: block;
+   
     }
-    header .hamburguer-icon{
-        display: block;
-    
-        
-    }
+  
+   
     header .navbar-item{
         display: none;
     }

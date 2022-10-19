@@ -1,4 +1,5 @@
 console.log('hello from source.js')
+
 let images = ['p1.jpeg','p2.jpeg','p3.jpeg','p4.jpeg','p5.jpeg','p6.jpeg','p7.jpeg','p8.jpeg',
 'p9.jpeg','p10.jpeg','p11.jpeg','p12.jpeg','p13.jpeg','p14.jpeg','p15.jpeg']
 
@@ -9,8 +10,6 @@ let scroolLeft = document.querySelector('#scrolLeft')
 
 let rigthtM = document.querySelector('#scrolRightM')
 let ledtM = document.querySelector('#scrolLeftM')
-
-
 scroolRighr.addEventListener('click',scroolRight)
 scroolLeft.addEventListener('click', scroolLefft)
 
@@ -89,12 +88,3 @@ function scroolLefft(){
 
 }
 
-
-const hamburguer = document.querySelector('.hamburguer-icon')
-hamburguer.addEventListener('click',()=>{
-  document.querySelector('#slaider').style.right = '50px'
-})
-const clos1 = document.querySelector('#clos1')
-clos1.addEventListener('click',()=>{
-  document.querySelector('#slaider').style.right = '-320px'
-})
