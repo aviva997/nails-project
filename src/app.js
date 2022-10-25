@@ -26,20 +26,7 @@ app.get('',(req,res)=>{
     })
 })
 
-// app.get('/gallary',(req,res) =>{
-//     res.render('index#gallary')
-// })
 
-app.get('/login',(req,res)=>{
-    res.render('loginPage',{
-        name: 'Login'
-    })
-})
-app.get('/sing-up',(req,res)=>{
-    res.render('singupPage',{
-        name: 'sing up'
-    })
-})
 
 app.get('/privacy-policy',(req, res) =>{
     res.render('footer-view/privacy-policy',{

@@ -21,7 +21,7 @@
 
         <div class="main-conatiner2">
             <div id="gallary" class="gallary">
-                <h2 class="name">My Gallary</h2>
+                <h2 class="name">גלריה</h2>
                 <hr class="hrs">
             </div>
             <div class="image-gallary">
@@ -41,48 +41,77 @@
                 </div>
             </div>
         </div>
-            <div class="main-container3">
+
+        <div class="myStory">
+            <h2 class="name">הסיפור שלנו </h2>
+            <hr class="hrs">
+            <p dir=rtl class="story">סטודיו ביתי עם אווירה חמה ביבנה ,מתמחה בלק ג'ל על ציפורן טבעית, מבנה אנטומי, שיקום  הציפורן ועוד לתיאום תור לפנות ל <a href="/#contacts">whatSapp </a> או להשאיר פרטים . </p>
+
+        </div>
+
+        <div class="main-container3">
             <div id="services" class="services">
-                <h2 class="name">My Service</h2>
+                <h2 class="name">השירותים שלנו</h2>
                 <hr class="hrs">
             </div>
 
             <div class="service-container">
                 <div class="service">
-                   <div class="title">Gel polish on a natural nail -</div>
+                   <div class="title">לק ג'ל על ציפורן טבעית  </div>
                    <div class="price">100  &#8362;</div>
-                    <button  class="appointment"><a href="/login">Appointment </a> <i class="fa  fa-calendar"></i></button>
                 </div>
                 <div class="service">
-                    <div class="title">Anatomic structure gel nail polish -</div>
+                    <div class="title">לק ג'ל כולל מבנה אנטומי </div>
                     <div class="price">120  &#8362;</div>
-                    <button  class="appointment"><a href="/login">Appointment </a> <i class="fa  fa-calendar"></i></button>
                 </div>
                 <div class="service">
-                    <div class="title">Construction in gel -</div>
+                    <div class="title">בניה בג'ל</div>
                     <div class="price">250 &#8362;</div>
-                    <button  class="appointment"><a href="/login">Appointment </a> <i class="fa  fa-calendar"></i></button>
                 </div>
             </div>
         </div>
 
         <div class="main-container4">
             <div id="contacts" class="contacts">
-                <h2 class="name">Contact</h2>
+                <h2 class="name">יצירת קשר</h2>
                 <hr class="hrs">
             </div>
             <div class="contact-container">
-                <div class="conatct-way">
-                    <div class="whatSapp">
-                        <button class="btn"><a href="https://api.whatsapp.com/send?phone=972545704017">whatsapp </a><i class="fa fa-whatsapp"></i></button>
-                           
+                    <div class="contact">
+                        <a href="https://api.whatsapp.com/send?phone=972545704017"><img class="images-contact"  src="/images/img/images.jpg" alt="whatsapp image"> </a>
                     </div>
-                    <div class="call">
-                        <button class="btn"> <a href="tel:+972 0585885484">Call Me</a><i class="fa fa-solid fa-phone"></i></button>
+                    <div class="contact">
+                        <a href="tel:+972 0585885484"><img  class="images-contact" src="/images/img/phone.jpg" alt="phone image"></a>
                     </div>
-                </div>
-
+                    <div class="contact">
+                        <a href="https://ul.waze.com/ul?ll=31.80146260%2C34.65245610&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"><img class="images-contact"  src="/images/img/icon-waze.jpg" alt="waze image"></a>
+                    </div>
             </div>
+                
+        </div>
+        <div class="contact_details">
+            <div class="con1">
+                <h2 class="name">השארת פרטים</h2>
+                <hr class="hrs">
+            </div>
+            <form class="contact_form" action="">
+              <div class="icons-contact">
+                <label for="name">שם פרטי</label>
+                <i class="fa fa-user"></i>
+                <input type="text" id="name"  placeholder=" שם ... ">
+              </div>
+
+              <div class="icons-contact">
+                <label for="phone">מספר טלפון</label>
+                <i class="fa fa-phone" ></i>
+                <input type="number" id="phone"  placeholder=" מספר טלפון ...">
+              </div>
+              <div class="icons-contact">
+                <label for="message">הודעה</label>
+                <textarea id="message" rows="4" cols="50">הודעה ..  </textarea> 
+              </div>
+                <input type="submit" value="הרשמה">
+            </form>
         </div>
     </main>
     {{>footer}}
